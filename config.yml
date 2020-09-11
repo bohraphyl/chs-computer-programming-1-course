@@ -1,0 +1,16 @@
+title: CHS Computer Programming 1
+description: Mr. Bohrer Computer Programming 1 Course.
+template:
+  repo: chs-computer-programming-1-template
+  name: chs-computer-programming-1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
